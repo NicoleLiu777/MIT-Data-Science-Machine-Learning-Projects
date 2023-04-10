@@ -1,14 +1,14 @@
-Foundations of Data Science Project - Diabetes Analysis
-Context
-Diabetes is one of the most frequent diseases worldwide and the number of diabetic patients are growing over the years. The main cause of diabetes remains unknown, yet scientists believe that both genetic factors and environmental lifestyle play a major role in diabetes.
+#Foundations of Data Science Project - Diabetes Analysis
+#Context
+#Diabetes is one of the most frequent diseases worldwide and the number of diabetic patients are growing over the years. The main cause of diabetes remains unknown, yet scientists believe that both genetic factors and environmental lifestyle play a major role in diabetes.
 
-A few years ago research was done on a tribe in America which is called the Pima tribe. In this tribe, it was found that the ladies are prone to diabetes very early. Several constraints were placed on the selection of these instances from a larger database. In particular, all patients were females at least 21 years old of Pima tribe.
+#A few years ago research was done on a tribe in America which is called the Pima tribe. In this tribe, it was found that the ladies are prone to diabetes very early. Several constraints were placed on the selection of these instances from a larger database. In particular, all patients were females at least 21 years old of Pima tribe.
 
-Objective
-Here, we are analyzing different aspects of Diabetes in the Pima Diabetes Analysis by doing Exploratory Data Analysis.
+#Objective
+#Here, we are analyzing different aspects of Diabetes in the Pima Diabetes Analysis by doing Exploratory Data Analysis.
 
-Data Dictionary
-The dataset has the following information:
+#Data Dictionary
+#The dataset has the following information:
 
 Pregnancies: Number of times pregnant
 Glucose: Plasma glucose concentration over 2 hours in an oral glucose tolerance test
@@ -19,7 +19,7 @@ BMI: Body mass index (weight in kg/(height in m)^2)
 DiabetesPedigreeFunction: A function that scores the likelihood of diabetes based on family history.
 Age: Age in years
 Outcome: Class variable (0: a person is not diabetic or 1: a person is diabetic)
-Q 1: Import the necessary libraries and briefly explain the use of each library (3 Marks)
+#Q 1: Import the necessary libraries and briefly explain the use of each library (3 Marks)
 # remove _____ & write the appropriate library name
 
 import numpy as np
@@ -28,12 +28,12 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 %matplotlib inline
-Write your Answer here:Ans 1: Numpy is used for handling Numbers, Numerical analysis. It is the fundamental package for array computing with Python. Pandas are used to process the data. Pandas contain data structures and data manipulation tools designed for data cleaning and analysis. Matplotlib is a cisualization library & has been taken from the software Matlab. We are only considering one part of this library to show plotting, hence used.pyplot which means python plot. Seaborn is another visualization library. When it comes to the visualization of statistical models like heat maps, Seaborn is among the reliable sources. This Python library is derived from matplotlib and closely intergraated with Pandas data structures.
+#Write your Answer here:Ans 1: Numpy is used for handling Numbers, Numerical analysis. It is the fundamental package for array computing with Python. Pandas are used to process the data. Pandas contain data structures and data manipulation tools designed for data cleaning and analysis. Matplotlib is a cisualization library & has been taken from the software Matlab. We are only considering one part of this library to show plotting, hence used.pyplot which means python plot. Seaborn is another visualization library. When it comes to the visualization of statistical models like heat maps, Seaborn is among the reliable sources. This Python library is derived from matplotlib and closely intergraated with Pandas data structures.
 Q 2: Read the given dataset (1 Mark)
 # remove _____ & write the appropriate function name
 
 pima = pd.read_csv("diabetes.csv")
-Q3. Show the last 10 records of the dataset. How many columns are there? (1 Mark)
+#Q3. Show the last 10 records of the dataset. How many columns are there? (1 Mark)
 # remove ______ and write the appropriate number in the function
 
 pima.tail(10)
